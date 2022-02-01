@@ -12,7 +12,7 @@ while (true) {
 
 while (true) {
     firstName = prompt ('Введите Ваше имя')
-    if (firstName == null || firstName == '' || firstName == ' ' || !isNaN (age)) {
+    if (firstName == null || firstName == '' || firstName == ' ' || !isNaN (firstName)) {
         alert('Введите имя корректно');
     } else break;
 }
