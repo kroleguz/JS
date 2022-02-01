@@ -5,28 +5,28 @@ var age;
 
 while (true) {
     surname = prompt ('Введите Вашу фамилию')
-    if (surname == null || undefined) {
+    if (surname == null || surname == '' || surname == ' ' || !isNaN (surname)) {
         alert('Введите фамилию корректно');
     } else break;
 }
 
 while (true) {
     firstName = prompt ('Введите Ваше имя')
-    if (firstName == null || undefined) {
+    if (firstName == null || firstName == '' || firstName == ' ' || !isNaN (age)) {
         alert('Введите имя корректно');
     } else break;
 }
 
 while (true) {
     patronic = prompt ('Введите Ваше отчество')
-    if (patronic == null || undefined) {
+    if (patronic == null || patronic == '' || patronic == ' ' || !isNaN (patronic)) {
         alert('Введите отчество корректно');
     } else break;
 }
 
 while (true) {
     age = +prompt ('Введите Ваш возраст')
-    if (age < 18 || age > 100) {
+    if (age < 18 || age > 100 || isNaN (age)) {
         alert('Ваш возраст некорректный');
     } else break;
 }
