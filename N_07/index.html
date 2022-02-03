@@ -8,8 +8,8 @@
 </head>
 <body>
     <script>
-        function vowels(){ 
-            let a = prompt('Введите строку');   
+        'use strict';
+        function vowels(a){   
             let letters = ('АаЯяУуЮюЫыИиЭэЕеЁёОо');
             let count = 0;
             for(var i = 0; i < a.length ; i++)
@@ -21,7 +21,9 @@
         }
         return count;
             }
-        console.log(vowels());
+        let a = prompt('Введите строку'); 
+        console.log(vowels(a));
+        alert('Количество гласных букв в слове: ' + vowels(a));
     </script>
 </body>
 </html>
