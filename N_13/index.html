@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function HashStorageFunc (key, value) {
+	var self = this;
+	self.hashStorage = {};
+
+	self.addValue = function (key,value){
+		self.hashStorage(key) = value;		
+}	
+	self.getValue = function(key) {
+	 	if (key in self.hashStorage) {
+		return self.hashStorage(key);
+		} else { 
+		return undefined;
+}
+}
+	self.deleteValue = function(key) {
+		
+		if (key in self.hashStorage) {
+		delete self.hashStorage(key);
+		return true;
+		} else {
+		return false;
+}	
+  	self.getkeys = function (key) {
+		var keys = [];
+		for (key in self.hashStorage) {
+		keys.push(key);
+		}
+		return keys;
+	}
+}
+}
+    </script>
+</body>
+</html>
